@@ -20,7 +20,9 @@ int boosted_attack(std::string D1_name, std::string D2_name, std::string D1_move
 
 	std::cout << D1_name << " uses " << D1_move << "!\n\n";
 
-	D2_hp = D2_hp - D1_atk * 2;
+	std::cout << "Perfect hit!\n\n";
+
+		D2_hp = D2_hp - D1_atk * 2;
 
 	std::cout << D2_name << " takes " << D1_atk * 2 << " Damage!\n\n";
 	std::cout << "=============================================\n\n";

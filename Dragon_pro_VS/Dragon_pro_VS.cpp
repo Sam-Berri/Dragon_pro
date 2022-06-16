@@ -16,11 +16,19 @@ int main(){
 	
 	srand(time(NULL));
 	
-	Roknol.Health_points = basic_attack(Igneal.Name, Roknol.Name, Igneal.Physical_attacks[std::rand() % 2], Roknol.Health_points, Igneal.Physical_power);
-
-	Roknol.Health_points = boosted_attack(Igneal.Name, Roknol.Name, Igneal.Physical_attacks[std::rand() % 2], Roknol.Health_points, Igneal.Physical_power);
+	int perfect_hit = std::rand() % 4;
 	
-	std::cout << Roknol.Health_points;
+	for (int i = 0; i < 10; i++) {
+
+		if (perfect_hit < 3) {
+			Roknol.Health_points = basic_attack(Igneal.Name, Roknol.Name, Igneal.Physical_attacks[std::rand() % 2], Roknol.Health_points, Igneal.Physical_power);
+			std::cout << Roknol.Health_points;
+		}
+		else {
+			Roknol.Health_points = boosted_attack(Igneal.Name, Roknol.Name, Igneal.Physical_attacks[std::rand() % 2], Roknol.Health_points, Igneal.Physical_power);
+			std::cout << Roknol.Health_points;
+		}
+	}
 }
 
 
