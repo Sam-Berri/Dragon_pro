@@ -1,0 +1,10 @@
+
+*.user
+*.filters
+*.vcxproj
+*.sln
+*.ipch
+*.opendb
+*.db-wal
+*.db-shm
+*.db
