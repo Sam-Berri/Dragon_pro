@@ -1,11 +1,12 @@
 #pragma once
 
-
+int basic_attack(std::string, std::string, std::string, int, int);
+int boosted_attack(std::string, std::string, std::string, int, int);
 
 class Dragon {
 public:
 		//attributes
-		std::string Name;
+	std::string Name;
 	std::string Type;
 	int Health_points;
 	int Magic_power;
@@ -22,6 +23,8 @@ public:
 		Physical_attacks = P_A;
 		Magical_attacks = M_A;
 	}
+
+
 
 
 };
