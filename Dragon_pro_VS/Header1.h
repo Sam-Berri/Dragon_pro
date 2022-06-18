@@ -25,6 +25,13 @@ public:
 	}
 
 
-
+	void health_bar() {
+		if (Health_points > Health_points * 0.9 && Health_points == Health_points) {
+			std::cout << Name << " HP[][][][][][][][][]-\n";
+		}
+		if (Health_points > Health_points * 0.8 && Health_points < Health_points * 0.89) {
+			std::cout << Name << " HP[][][][][][][][][]-\n";
+		}
+	}
 
 };

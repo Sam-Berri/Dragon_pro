@@ -8,3 +8,15 @@
 *.db-wal
 *.db-shm
 *.db
+*.pdb
+*.idb
+*.txt
+*.tlog
+*.obj
+*.log
+*.ilk
+*.recipe
+*.exe
+Dragon_pro_VS/.vs/Dragon_pro_VS/v17/.suo
+*.vsidx
+*.lock
