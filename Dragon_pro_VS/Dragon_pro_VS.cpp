@@ -16,20 +16,28 @@ int main(){
 	
 	srand(time(NULL));
 	
-	int perfect_hit = std::rand() % 4;
+	
 	
 	
 
-		if (perfect_hit < 3) {
-			Roknol.Health_points = basic_attack(Igneal.Name, Roknol.Name, Igneal.Physical_attacks[std::rand() % 2], Roknol.Health_points, Igneal.Physical_power);
-			std::cout << Roknol.Health_points;
-		}
-		else {
-			Roknol.Health_points = boosted_attack(Igneal.Name, Roknol.Name, Igneal.Physical_attacks[std::rand() % 2], Roknol.Health_points, Igneal.Physical_power);
-			std::cout << Roknol.Health_points;
-		}
-	
+	while (Roknol.Health_points > 0 && Igneal.Health_points > 0) {
+		Roknol.Health_points = basic_attack(Igneal.Name, Roknol.Name, Igneal.Physical_attacks[0], Roknol.Health_points, Igneal.Physical_power);
+		Roknol.health_bar();
 		Igneal.health_bar();
+		std::cout << Igneal.Health_points;
+		Igneal.Health_points = basic_attack(Roknol.Name, Igneal.Name, Roknol.Physical_attacks[0], Igneal.Health_points, Roknol.Physical_power);
+		Roknol.health_bar();
+		Igneal.health_bar();
+		std::cout << Igneal.Health_points;
+		Roknol.Health_points = boosted_attack(Igneal.Name, Roknol.Name, Igneal.Magical_attacks[0], Roknol.Health_points, Igneal.Magic_power);
+		Roknol.health_bar();
+		Igneal.health_bar();
+		std::cout << Igneal.Health_points;
+		Igneal.Health_points = boosted_attack(Roknol.Name, Igneal.Name, Roknol.Magical_attacks[1], Igneal.Health_points, Roknol.Magic_power);
+		Roknol.health_bar();
+		Igneal.health_bar();
+		std::cout << Igneal.Health_points;
+	}
 }
 
 
