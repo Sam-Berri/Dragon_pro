@@ -27,44 +27,44 @@ public:
 	}
 
 
-	void health_bar(int Max_hp ) {
+	void health_bar( ) {
 		
 		
 		
-		if (Health_points > Health_points * 0.99) {
+		if (Health_points > MAX_hp * 0.99) {
 			std::cout << Name << " HP[][][][][][][][][][]\n";
 		}
-		else if (Health_points > Health_points * 0.9 || Health_points < Health_points * 0.98) {
+		else if (Health_points > MAX_hp * 0.9 && Health_points < MAX_hp * 0.98) {
 			std::cout << Name << " HP[][][][][][][][][]--\n";
 		}
-		else if (Health_points > Health_points * 0.8 || Health_points < Health_points * 0.89) {
+		else if (Health_points > MAX_hp * 0.8 && Health_points < MAX_hp * 0.89) {
 			std::cout << Name << " HP[][][][][][][][]----\n";
 		}
-		else if (Health_points > Health_points * 0.7 || Health_points < Health_points * 0.79) {
+		else if (Health_points > MAX_hp * 0.7 && Health_points < MAX_hp * 0.79) {
 			std::cout << Name << " HP[][][][][][][]------\n";
 		}
-		else if (Health_points > Health_points * 0.6 || Health_points < Health_points * 0.69) {
+		else if (Health_points > MAX_hp * 0.6 && Health_points < MAX_hp * 0.69) {
 			std::cout << Name << " HP[][][][][][]--------\n";
 		}
-		else if (Health_points > Health_points * 0.5 || Health_points < Health_points * 0.59) {
+		else if (Health_points > MAX_hp * 0.5 && Health_points < MAX_hp * 0.59) {
 			std::cout << Name << " HP[][][][][]----------\n";
 		}
-		else if (Health_points > Health_points * 0.4 || Health_points < Health_points * 0.49) {
+		else if (Health_points > MAX_hp * 0.4 && Health_points < MAX_hp * 0.49) {
 			std::cout << Name << " HP[][][][]------------\n";
 		}
-		else if (Health_points > Health_points * 0.4 || Health_points < Health_points * 0.49) {
+		else if (Health_points > MAX_hp * 0.4 && Health_points < MAX_hp * 0.49) {
 			std::cout << Name << " HP[][][][]------------\n";
 		}
-		else if (Health_points > Health_points * 0.3 || Health_points < Health_points * 0.39) {
+		else if (Health_points > MAX_hp * 0.3 && Health_points < MAX_hp * 0.39) {
 			std::cout << Name << " HP[][][]--------------\n";
 		}
-		else if (Health_points > Health_points * 0.2 || Health_points < Health_points * 0.29) {
+		else if (Health_points > MAX_hp * 0.2 && Health_points < MAX_hp * 0.29) {
 			std::cout << Name << " HP[][]----------------\n";
 		}
-		else if (Health_points > Health_points * 0.01 || Health_points < Health_points * 0.19) {
+		else if (Health_points > MAX_hp * 0.01 && Health_points < MAX_hp * 0.19) {
 			std::cout << Name << " HP[]------------------\n";
 		}
-		else if (Health_points < 0) {
+		else if (Health_points <= 0) {
 			std::cout << Name << " HP--------------------\n";
 		}
 	}
