@@ -29,6 +29,3 @@ int boosted_attack(std::string D1_name, std::string D2_name, std::string D1_move
 	return D2_hp;
 }
 
-void Health_bars() {
-
-}
