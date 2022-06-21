@@ -27,41 +27,41 @@ public:
 	}
 
 
-	void health_bar( ) {
+	void health_bar() {
 		
 		
 		
 		if (Health_points > MAX_hp * 0.99) {
 			std::cout << Name << " HP[][][][][][][][][][]\n";
 		}
-		else if (Health_points >= MAX_hp * 0.9 ) {
+		else if (Health_points >= MAX_hp * 0.9) {
 			std::cout << Name << " HP[][][][][][][][][]--\n";
 		}
 		else if (Health_points >= MAX_hp * 0.8) {
 			std::cout << Name << " HP[][][][][][][][]----\n";
 		}
-		else if (Health_points >= MAX_hp * 0.7 ) {
+		else if (Health_points >= MAX_hp * 0.7) {
 			std::cout << Name << " HP[][][][][][][]------\n";
 		}
-		else if (Health_points >= MAX_hp * 0.6 ) {
+		else if (Health_points >= MAX_hp * 0.6) {
 			std::cout << Name << " HP[][][][][][]--------\n";
 		}
-		else if (Health_points >= MAX_hp * 0.5 ) {
+		else if (Health_points >= MAX_hp * 0.5) {
 			std::cout << Name << " HP[][][][][]----------\n";
 		}
-		else if (Health_points >= MAX_hp * 0.4 ) {
+		else if (Health_points >= MAX_hp * 0.4) {
 			std::cout << Name << " HP[][][][]------------\n";
 		}
-	    else if (Health_points >= MAX_hp * 0.3 ) {
+		else if (Health_points >= MAX_hp * 0.3) {
 			std::cout << Name << " HP[][][]--------------\n";
 		}
-		else if (Health_points >= MAX_hp * 0.2 ) {
+		else if (Health_points >= MAX_hp * 0.2) {
 			std::cout << Name << " HP[][]----------------\n";
 		}
-		else if (Health_points >= MAX_hp * 0.1 ) {
+		else if (Health_points >= MAX_hp * 0.1) {
 			std::cout << Name << " HP[]------------------\n";
 		}
-		else if (Health_points >= MAX_hp * 0.01 ) {
+		else if (Health_points >= MAX_hp * 0.01) {
 			std::cout << Name << " HP[]------------------\n";
 		}
 		else if (Health_points <= 0) {
@@ -71,5 +71,24 @@ public:
 			std::cout << "Error\n";
 		}
 	}
+
+
+	int Move_selector(int move_selector) {
+
+		std::cout << "Physical Attacks -\n";
+		std::cout << "1. " << Physical_attacks[0] << "\n";
+		std::cout << "2. " << Physical_attacks[1] << "\n\n";
+
+		std::cout << "Magical Attacks -\n";
+		std::cout << "3. " << Magical_attacks[0] << "\n";
+		std::cout << "4. " << Magical_attacks[1] << "\n\n";
+
+		std::cout << "Key in corrisponding number\n";
+		std::cin >> move_selector;
+
+		return move_selector;
+
+	}
+
 
 };
