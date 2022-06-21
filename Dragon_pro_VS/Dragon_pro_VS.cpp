@@ -21,7 +21,7 @@ int main(){
 	Roknol.health_bar();
 	Igneal.health_bar();
 
-	while (Roknol.Health_points >= 0 && Igneal.Health_points >= 0) {
+	while (Roknol.Health_points >0 && Igneal.Health_points > 0) {
 	
 		
 		Roknol.Health_points = basic_attack(Igneal.Name, Roknol.Name, Igneal.Physical_attacks[0], Roknol.Health_points, Igneal.Physical_power);
