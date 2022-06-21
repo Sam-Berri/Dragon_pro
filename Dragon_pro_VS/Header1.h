@@ -34,34 +34,34 @@ public:
 		if (Health_points > MAX_hp * 0.99) {
 			std::cout << Name << " HP[][][][][][][][][][]\n";
 		}
-		else if (Health_points >= MAX_hp * 0.9 && Health_points <= MAX_hp * 0.9899) {
+		else if (Health_points >= MAX_hp * 0.9 ) {
 			std::cout << Name << " HP[][][][][][][][][]--\n";
 		}
-		else if (Health_points >= MAX_hp * 0.8 && Health_points <= MAX_hp * 0.8999) {
+		else if (Health_points >= MAX_hp * 0.8) {
 			std::cout << Name << " HP[][][][][][][][]----\n";
 		}
-		else if (Health_points >= MAX_hp * 0.7 && Health_points <= MAX_hp * 0.7999) {
+		else if (Health_points >= MAX_hp * 0.7 ) {
 			std::cout << Name << " HP[][][][][][][]------\n";
 		}
-		else if (Health_points >= MAX_hp * 0.6 && Health_points <= MAX_hp * 0.6999) {
+		else if (Health_points >= MAX_hp * 0.6 ) {
 			std::cout << Name << " HP[][][][][][]--------\n";
 		}
-		else if (Health_points >= MAX_hp * 0.5 && Health_points <= MAX_hp * 0.5999) {
+		else if (Health_points >= MAX_hp * 0.5 ) {
 			std::cout << Name << " HP[][][][][]----------\n";
 		}
-		else if (Health_points >= MAX_hp * 0.4 && Health_points <= MAX_hp * 0.4999999) {
+		else if (Health_points >= MAX_hp * 0.4 ) {
 			std::cout << Name << " HP[][][][]------------\n";
 		}
-	    else if (Health_points >= MAX_hp * 0.3 && Health_points <= MAX_hp * 0.39999999) {
+	    else if (Health_points >= MAX_hp * 0.3 ) {
 			std::cout << Name << " HP[][][]--------------\n";
 		}
-		else if (Health_points >= MAX_hp * 0.2 && Health_points <= MAX_hp * 0.2999999) {
+		else if (Health_points >= MAX_hp * 0.2 ) {
 			std::cout << Name << " HP[][]----------------\n";
 		}
-		else if (Health_points >= MAX_hp * 0.1 && Health_points <= MAX_hp * 0.1999999) {
+		else if (Health_points >= MAX_hp * 0.1 ) {
 			std::cout << Name << " HP[]------------------\n";
 		}
-		else if (Health_points >= MAX_hp * 0.01 && Health_points <= MAX_hp * 0.09) {
+		else if (Health_points >= MAX_hp * 0.01 ) {
 			std::cout << Name << " HP[]------------------\n";
 		}
 		else if (Health_points <= 0) {
