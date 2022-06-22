@@ -2,6 +2,7 @@
 
 int basic_attack(std::string, std::string, std::string, int, int);
 int boosted_attack(std::string, std::string, std::string, int, int);
+void Decide_victor(std::string , std::string , int, int );
 
 class Dragon {
 public:
@@ -90,5 +91,7 @@ public:
 
 	}
 
+	
 
+	
 };

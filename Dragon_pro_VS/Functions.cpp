@@ -29,3 +29,11 @@ int boosted_attack(std::string D1_name, std::string D2_name, std::string D1_move
 	return D2_hp;
 }
 
+void Decide_victor(std::string d1_name, std::string d2_name,int d1_hp,int d2_hp) {
+	if (d1_hp > d2_hp) {
+		std::cout << "\n" << d1_name << " Wins!\n";
+	}
+	if (d2_hp > d1_hp) {
+		std::cout << "\n" << d2_name << " Wins!\n";
+	}
+}
