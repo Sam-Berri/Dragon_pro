@@ -1,9 +1,9 @@
 #pragma once
-
+//function headers
 int basic_attack(std::string, std::string, std::string, int, int);
 int boosted_attack(std::string, std::string, std::string, int, int);
 void Decide_victor(std::string , std::string , int, int );
-
+//Global varibales
 class Dragon {
 public:
 		//attributes
@@ -91,7 +91,5 @@ public:
 
 	}
 
-	
 
-	
 };

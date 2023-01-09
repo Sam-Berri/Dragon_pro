@@ -37,3 +37,9 @@ void Decide_victor(std::string d1_name, std::string d2_name,int d1_hp,int d2_hp)
 		std::cout << "\n" << d2_name << " Wins!\n";
 	}
 }
+
+
+int Computers_move(int move_selector) {
+
+
+}
